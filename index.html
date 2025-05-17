@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Contas</h1>
+
+        <!-- Formulário para adicionar nova conta -->
+        <form class="account-form" id="account-form">
+            <input type="text" id="account-name" placeholder="Nome da conta" required>
+            <input type="number" id="account-value" placeholder="Valor" step="0.01" required>
+            <button type="submit" id="add-account">Adicionar</button>
+        </form>
+
+        <!-- Lista de contas -->
+        <ul class="accounts-list" id="accounts-list">
+            <!-- Exemplos de contas (você pode remover estes exemplos) -->
+            <li class="account-item" data-id="1">
+                <div class="account-info">
+                    <div class="account-name">Salário</div>
+                    <div class="account-balance positive">R$ 3.500,00</div>
+                </div>
+                <div class="account-actions">
+                    <button class="btn btn-edit">Editar</button>
+                    <button class="btn btn-delete">Excluir</button>
+                </div>
+            </li>
+            <li class="account-item" data-id="2">
+                <div class="account-info">
+                    <div class="account-name">Aluguel</div>
+                    <div class="account-balance negative">-R$ 1.200,00</div>
+                </div>
+                <div class="account-actions">
+                    <button class="btn btn-edit">Editar</button>
+                    <button class="btn btn-delete">Excluir</button>
+                </div>
+            </li>
+            <li class="account-item" data-id="3">
+                <div class="account-info">
+                    <div class="account-name">Supermercado</div>
+                    <div class="account-balance negative">-R$ 650,00</div>
+                </div>
+                <div class="account-actions">
+                    <button class="btn btn-edit">Editar</button>
+                    <button class="btn btn-delete">Excluir</button>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Seção de total -->
+        <div class="total-section">
+            <div id="total-balance">Saldo Total: R$ 1.650,00</div>
+        </div>
+    </div>
+
+    <!-- Aqui você pode adicionar seu script JavaScript -->
+    <script>
+        // Seu código JavaScript virá aqui
+    </script>
+</body>
+</html>
