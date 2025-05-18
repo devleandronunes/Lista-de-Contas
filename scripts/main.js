@@ -1,3 +1,3 @@
-import takeInputValue from "./inputValue.js";
+import takeInputValue from "./takeInputValue.js";
 
 takeInputValue()
