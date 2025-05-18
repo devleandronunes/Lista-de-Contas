@@ -6,7 +6,7 @@ function takeInputValue() {
     addAccount.addEventListener('click', (event) => {
         event.preventDefault()
 
-        if(accountNameInput.value === '' || accountValueInput.value >= 0) {
+        if(accountNameInput.value === '' || accountValueInput.value <= 0) {
             alert('Adicionar todos os campos')
 
             return
