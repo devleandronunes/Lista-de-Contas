@@ -1,3 +1,5 @@
+import createAccountItem from "./createAccountItem.js"
+
 function takeInputValue() {
     const accountNameInput = document.getElementById('account-name')
     const accountValueInput = document.getElementById('account-value')
@@ -14,6 +16,8 @@ function takeInputValue() {
 
         const accountName = accountNameInput.value
         const accountValue = accountValueInput.value
+
+        createAccountItem(accountName, accountValue);
 
         console.log(accountName, accountValue);
         return {accountValue, accountName}
